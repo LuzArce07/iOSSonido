@@ -16,6 +16,9 @@
 		3D17784E230DEA69007B0220 /* SonidoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D17784D230DEA69007B0220 /* SonidoUITests.swift */; };
 		3D17785C230DECD6007B0220 /* AUDIO 29.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D17785B230DECD2007B0220 /* AUDIO 29.wav */; };
 		3D17785E230DECDB007B0220 /* AUDIO 29.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D17785D230DECD9007B0220 /* AUDIO 29.wav */; };
+		3D30605923107ECC00EC82C2 /* AUDIO 29.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D30605823107ECC00EC82C2 /* AUDIO 29.wav */; };
+		3D30605B2310802200EC82C2 /* sonido.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3D30605A2310802200EC82C2 /* sonido.wav */; };
+		3D30605D2310891A00EC82C2 /* PantallaLilaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30605C2310891A00EC82C2 /* PantallaLilaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		3D17784F230DEA69007B0220 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D17785B230DECD2007B0220 /* AUDIO 29.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "AUDIO 29.wav"; sourceTree = "<group>"; };
 		3D17785D230DECD9007B0220 /* AUDIO 29.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "AUDIO 29.wav"; path = "../../../Downloads/AUDIO 29.wav"; sourceTree = "<group>"; };
+		3D30605823107ECC00EC82C2 /* AUDIO 29.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "AUDIO 29.wav"; sourceTree = "<group>"; };
+		3D30605A2310802200EC82C2 /* sonido.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sonido.wav; sourceTree = "<group>"; };
+		3D30605C2310891A00EC82C2 /* PantallaLilaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaLilaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,17 @@
 		3D17782C230DEA64007B0220 /* Sonido */ = {
 			isa = PBXGroup;
 			children = (
+				3D30605A2310802200EC82C2 /* sonido.wav */,
 				3D17785B230DECD2007B0220 /* AUDIO 29.wav */,
 				3D17785D230DECD9007B0220 /* AUDIO 29.wav */,
+				3D30605823107ECC00EC82C2 /* AUDIO 29.wav */,
 				3D17782D230DEA64007B0220 /* AppDelegate.swift */,
 				3D17782F230DEA64007B0220 /* ViewController.swift */,
 				3D177831230DEA64007B0220 /* Main.storyboard */,
 				3D177834230DEA69007B0220 /* Assets.xcassets */,
 				3D177836230DEA69007B0220 /* LaunchScreen.storyboard */,
 				3D177839230DEA69007B0220 /* Info.plist */,
+				3D30605C2310891A00EC82C2 /* PantallaLilaController.swift */,
 			);
 			path = Sonido;
 			sourceTree = "<group>";
@@ -235,9 +244,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D30605B2310802200EC82C2 /* sonido.wav in Resources */,
 				3D177838230DEA69007B0220 /* LaunchScreen.storyboard in Resources */,
 				3D17785C230DECD6007B0220 /* AUDIO 29.wav in Resources */,
 				3D17785E230DECDB007B0220 /* AUDIO 29.wav in Resources */,
+				3D30605923107ECC00EC82C2 /* AUDIO 29.wav in Resources */,
 				3D177835230DEA69007B0220 /* Assets.xcassets in Resources */,
 				3D177833230DEA64007B0220 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D177830230DEA64007B0220 /* ViewController.swift in Sources */,
+				3D30605D2310891A00EC82C2 /* PantallaLilaController.swift in Sources */,
 				3D17782E230DEA64007B0220 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

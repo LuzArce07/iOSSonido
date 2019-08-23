@@ -12,9 +12,29 @@ import AVFoundation
 
 class ViewController: UIViewController {
 
+    // ? es opcional
     var player : AVAudioPlayer?
+    var playerMusicaFondo : AVAudioPlayer?
+    
+    var reproducccion = false
     
     @IBAction func doTapReproducir(_ sender: Any) {
+        
+        if reproducccion {
+            let pathMusicaFondo = Bundle.main.path(forResource: "sonido.wav", ofType : nil)
+            let urlMusicaFondo = URL(fileURLWithPath: pathMusicaFondo!)
+            
+            do {
+                player = try AVAudioPlayer(contentsOf : urlMusicaFondo)
+            } catch {
+                
+            }
+            
+        } else {
+            
+            reproducccion = true
+            
+        }
         
         if player != nil { //Nil: nulo
             
@@ -30,9 +50,14 @@ class ViewController: UIViewController {
         let path = Bundle.main.path(forResource: "AUDIO 29.wav", ofType: nil)
         let url = URL(fileURLWithPath: path!)
         
+       
+        
         do {
             
             player = try AVAudioPlayer(contentsOf: url)
+            
+            
+            //playerMusicaFondo?.play()
             
         } catch {
             
